@@ -1,30 +1,34 @@
-import React from 'react';
-import Layout from '../components/Layouts'
+import React, {Fragment} from 'react';
+import Layout from '../components/Layouts';
+import Footer from '../components/Footer';
 import Post from '../components/Post';
 
 import { graphql } from 'gatsby';
 
 
 const Blog = ({ data }) => (
-    <Layout>
-        <h1>Blog</h1>
-        {
-            data.allMarkdownRemark.edges.map(post => {
-                const { title, author, date, description, path } = post.node.frontmatter;
+    <Fragment>
+        <Layout>
+            <h1>Blog</h1>
+            {
+                data.allMarkdownRemark.edges.map(post => {
+                    const { title, author, date, description, path } = post.node.frontmatter;
 
-                return (
-                    <Post
-                        title={title}
-                        author={author}
-                        date={date}
-                        description={description}
-                        key={`${date}__${title}`}
-                        path={path}
-                    />
-                )
-            })
-        }
-    </Layout>
+                    return (
+                        <Post
+                            title={title}
+                            author={author}
+                            date={date}
+                            description={description}
+                            key={`${date}__${title}`}
+                            path={path}
+                        />
+                    )
+                })
+            }
+        </Layout>
+        <Footer />
+    </Fragment>
 );
 
 export default Blog;
