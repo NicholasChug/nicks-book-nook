@@ -7,16 +7,16 @@ const Nav = () => (
     <nav className="nav">
         <ul className="nav-list">
             <li className="nav-list-item">
-                <Link activeStyle={{ borderBottom:"2px solid #F0E6EF" }} to="/">Home</Link>
+                <Link activeStyle={{ borderBottom:"2px solid #fff" }} to="/">Home</Link>
             </li>
             <li className="nav-list-item">
-                <Link activeStyle={{ borderBottom: "2px solid #F0E6EF" }} to="/about">About</Link>
+                <Link activeStyle={{ borderBottom: "2px solid #fff" }} to="/about">About</Link>
             </li>
             <li className="nav-list-item">
-                <Link activeStyle={{ borderBottom: "2px solid #F0E6EF" }} to="/blog">Blog</Link>
+                <Link activeStyle={{ borderBottom: "2px solid #fff" }} to="/blog">Blog</Link>
             </li>
             <li className="nav-list-item">
-                <Link activeStyle={{ borderBottom: "2px solid #F0E6EF" }} to="/contact">Contact</Link>
+                <Link activeStyle={{ borderBottom: "2px solid #fff" }} to="/contact">Contact</Link>
             </li>
         </ul>
     </nav>

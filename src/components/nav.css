@@ -11,6 +11,7 @@
   display: flex;
   margin: 0;
   padding: 0;
+  justify-content: flex-end;
 }
 
 .nav-list-item {
@@ -20,7 +21,7 @@
 }
 
 .nav-list a {
-  color: #F0E6EF;
+  color: #fff;
   text-decoration: none;
   border-bottom: 2px transparent;
   transition: border 0.1s linear;
@@ -28,5 +29,5 @@
 
 .nav-list a:hover,
 .nav-list a:focus  {
-  border-bottom: 2px solid #F0E6EF;
+  border-bottom: 2px solid #fff;
 }
